@@ -35,6 +35,12 @@ When the process is finished a iso image will be ready on the `dist` folder.
 Just burn into a DVD or to a USB stick using the same process of the Raspberry Pi images. 
 ('USB image recorder' from Linux Mint works perfectly for this function.)
 
+If you want to burn it from command line:
+1. ```df``` to list the mounted devices
+1. ```sudo umount /dev/sdb1``` to unmount the device
+1. ```sudo dd if=/path/to/iso of=/dev/sdb1 bs=1M``` to burn the ISO
+
+
 ## Install & provision Adalab Ubuntu
 
 Once burned the image on a DVD or on an USB pendrive use it to start the installation.

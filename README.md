@@ -37,8 +37,8 @@ Just burn into a DVD or to a USB stick using the same process of the Raspberry P
 
 If you want to burn it from command line:
 1. ```df``` to list the mounted devices
-1. ```sudo umount /dev/sdb1``` to unmount the device
-1. ```sudo dd if=/path/to/iso of=/dev/sdb1 bs=1M``` to burn the ISO
+1. ```sudo umount /dev/sdb*``` to unmount the device
+1. ```sudo dd if=/path/to/iso of=/dev/sdb``` to burn the ISO
 
 
 ## Install & provision Adalab Ubuntu
